@@ -1,0 +1,40 @@
+{
+    "manufacturer": "Chris Br\u00e4ucker",
+    "keyboard_name": "herrfolgreich/nitz_split/4x6/rev1",
+    "maintainer": "chrisbraucker",
+    "development_board": "promicro",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": false,
+        "oled": true
+    },
+    "matrix_pins": {
+        "cols": ["D4", "C6", "D7", "E6", "B4", "B5"],
+        "rows": ["F7", "B1", "B3", "B2","B6", "NO_PIN"]
+    },
+    "split": {
+        "enabled": true,
+        "matrix_pins": {
+            "right": {
+                "cols": ["B6", "B2", "B3", "B1", "F7", "F6"],
+                "rows": ["D4", "C6", "D7", "E6", "B4", "B5"]
+            }
+        },
+        "transport": {
+            "protocol": "i2c",
+            "sync": {
+                "layer_state": true
+            }
+        }
+    },
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0xBEAD",
+        "vid": "0xFEED"
+    }
+}
